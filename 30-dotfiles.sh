@@ -5,4 +5,10 @@ cd ~
 git clone https://github.com/alterelkt/.dotfiles.git
 cd .dotfiles
 stow --adopt -v -t ~ */
-cd ..
+stow -D -v -t ~ */
+cd ~
+rm -rf .dotfiles/
+git clone https://github.com/alterelkt/.dotfiles.git
+cd .dotfiles
+stow --adopt -v -t ~ */
+cd ~

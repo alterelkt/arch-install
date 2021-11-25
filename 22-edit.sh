@@ -3,7 +3,7 @@ echo '#permit :wheel' >> /etc/doas.conf
 vim /etc/doas.conf
 chown -c root:root /etc/doas.conf
 chmod -c 0400 /etc/doas.conf
-
+EDITOR=vim visudo
 
 printf "\n \n \n In the start 'MODULES=()' to 'MODULES=(btrfs nvidia)' \n In below down 'HOOKS=(...block filesystem...)' to 'HOOKS=(...block encrypt filesystem...)'\n"
 while true; do

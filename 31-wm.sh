@@ -1,6 +1,8 @@
 #!/bin/bash
 set -x
 set -e
+mkdir ~/.dwm
+cd ~/.dwm
 git clone https://github.com/alterelkt/dwm.git
 git clone https://github.com/alterelkt/dmenu.git
 git clone https://github.com/alterelkt/st.git
@@ -11,5 +13,5 @@ cd ../dmenu
 doas make clean install
 cd ../st
 doas make clean install
-cd ..
+cd
 

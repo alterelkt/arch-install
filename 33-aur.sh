@@ -1,9 +1,9 @@
 #!/bin/bash
 set -x
 set -e
+paru -S timeshift-bin
 paru -S \
-	zramd \
-	timeshift-bin timeshift-autosnap \
+	timeshift-autosnap \
 	brave-bin \
 	nerd-fonts-jetbrains-mono \
 	picom-ibhagwan-git \
