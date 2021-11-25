@@ -1,8 +1,8 @@
 #!/bin/bash
-echo '#permit:wheel' >> /etc/doas.conf
+echo '#permit :wheel' >> /etc/doas.conf
 vim /etc/doas.conf
 chown -c root:root /etc/doas.conf
-chown -c 0400 /etc/doas.conf
+chmod -c 0400 /etc/doas.conf
 
 
 printf "\n \n \n In the start 'MODULES=()' to 'MODULES=(btrfs nvidia)' \n In below down 'HOOKS=(...block filesystem...)' to 'HOOKS=(...block encrypt filesystem...)'\n"
