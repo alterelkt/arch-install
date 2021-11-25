@@ -6,7 +6,7 @@ pacman -S \
 	intel-ucode base-devel linux-headers \
 	smartmontools mtools dosfstools btrfs-progs ntfs-3g \
 	xdg-user-dirs xdg-utils \
-	git openssh rsync \
+	git openssh rsync stow \
 	opendoas htop wget firewalld cronie nmap \
 	networkmanager network-manager-applet wpa_supplicant \
 	bluez bluez-utils \
