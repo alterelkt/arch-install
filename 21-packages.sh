@@ -4,7 +4,7 @@ set -e
 pacman -S \
 	grub grub-btrfs efibootmgr os-prober \
 	intel-ucode base-devel linux-headers \
-	smartmontools mtools dosfstools btrfs-progs ntfs-3g \
+	smartmontools mtools dosfstools cryptsetup btrfs-progs ntfs-3g \
 	xdg-user-dirs xdg-utils \
 	git openssh rsync stow \
 	opendoas htop wget firewalld cronie nmap \

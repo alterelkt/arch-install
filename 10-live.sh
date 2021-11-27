@@ -27,6 +27,11 @@ mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@home /dev/ma
 mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@var /dev/mapper/cryptroot /mnt/var
 mount /dev/${boot_partition} /mnt/boot
 
+mkdir /media/backup
+mkdir /media/storage
+#mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@backupsubvol /dev/mapper/cryptbackup /backup
+#mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@storagesubvol /dev/mapper/cryptstorage /storage
+
 pacstrap /mnt base linux linux-firmware intel-ucode btrfs-progs git wget unzip vim
 
 genfstab -U /mnt >> /mnt/etc/fstab
